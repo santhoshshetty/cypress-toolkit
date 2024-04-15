@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["node", "cypress"],
+    "module": "NodeNext",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "lib/cjs/"
+  },
+  "include": ["cypress/**/*.ts", "cypress/**/*.tsx", "cypress/**/*.cy.tsx"],
+  "exclude": ["cypress/examples", "node_modules", "lib"]
+}
