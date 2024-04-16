@@ -13,5 +13,5 @@ jobs:
         with:
           install: true
           browser: chrome
-          working-directory: ./cypress
+          working-directory: ./
           command: npm run test
