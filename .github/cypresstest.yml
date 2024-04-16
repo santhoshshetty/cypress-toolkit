@@ -1,0 +1,17 @@
+name: cypress test
+on: workflow_dispatch
+jobs:
+  cypress-run:
+    name: Run Cypress Test
+    runs-one: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Test
+        uses: cypress-io/github-action@v2
+        with:
+          install: true
+          browser: chrome
+          working-directory: ./cypress
+          command: npm run test
