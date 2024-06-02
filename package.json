@@ -4,7 +4,13 @@
   "description": "Cypress with Cucumber and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "lint": "npx eslint .",
+    "lint-fix": "npx eslint . --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npx prettier . --write",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Santhosh Shetty",
@@ -12,7 +18,12 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
     "cypress": "latest",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.0",
     "typescript": "latest"
   },
   "cypress-cucumber-preprocessor": {

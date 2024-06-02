@@ -5,12 +5,12 @@ import { createEsbuildPlugin } from "@badeball/cypress-cucumber-preprocessor/esb
 
 async function setupNodeEvents(
   on: Cypress.PluginEvents,
-  config: Cypress.PluginConfigOptions
+  config: Cypress.PluginConfigOptions,
 ): Promise<Cypress.PluginConfigOptions> {
   await addCucumberPreprocessorPlugin(on, config);
   on(
     "file:preprocessor",
-    createBundler({ plugins: [createEsbuildPlugin(config)] })
+    createBundler({ plugins: [createEsbuildPlugin(config)] }),
   );
   return config;
 }
