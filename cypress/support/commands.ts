@@ -5,7 +5,7 @@ Cypress.Commands.add(
       expect(response.response.statusCode).to.equal(expectedStatusCode);
       return cy.wrap(response.response.body);
     });
-  }
+  },
 );
 
 Cypress.Commands.add("getByDataTestId", (dataTestIdValue) => {
