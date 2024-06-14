@@ -1,8 +1,8 @@
 import { Given, Then } from "@badeball/cypress-cucumber-preprocessor";
-import { SignInPage } from "../pages/SignInPage";
-import { HomePage } from "../pages/HomePage";
-import { CheckoutPage } from "../pages/CheckoutPage";
-import ordersData from "../../../fixtures/orders.json";
+import { SignInPage } from "../../pages/SignInPage";
+import { HomePage } from "../../pages/HomePage";
+import { CheckoutPage } from "../../pages/CheckoutPage";
+import ordersData from "../../../../../fixtures/orders.json";
 
 /**
  * Represents the sign-in page object.
