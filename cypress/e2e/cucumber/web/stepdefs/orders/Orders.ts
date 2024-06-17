@@ -3,7 +3,6 @@ import { SignInPage } from "../../pages/SignInPage";
 import { HomePage } from "../../pages/HomePage";
 import { CheckoutPage } from "../../pages/CheckoutPage";
 import ordersData from "../../../../../fixtures/orders.json";
-
 /**
  * Represents the sign-in page object.
  */
