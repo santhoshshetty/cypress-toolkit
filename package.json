@@ -18,11 +18,13 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
     "cypress": "latest",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.0",
     "typescript": "latest"
   },
