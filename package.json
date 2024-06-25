@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Cypress with Cucumber and TypeScript",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run",
-    "lint": "npx eslint .",
+    "lint": "eslint .",
     "lint-fix": "npx eslint . --fix",
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write",
@@ -32,9 +33,11 @@
     "stepDefinitions": [
       "cypress/e2e/cucumber/**/stepdefs/**/*.ts"
     ],
-    "json": {
-      "enabled": true,
-      "output": "e2e-test-report/cucumber-report.json"
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
     }
   }
 }
