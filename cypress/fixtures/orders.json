@@ -1,0 +1,9 @@
+{
+  "username": "demouser",
+  "password": "testingisfun99",
+  "firstName": "John",
+  "lastName": "John",
+  "address": "1234 Admin St",
+  "province": "Berlin",
+  "postalCode": "12345"
+}

@@ -7,7 +7,8 @@
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "lib/cjs/"
+    "outDir": "lib/cjs/",
+    "resolveJsonModule": true
   },
   "include": ["cypress/**/*.ts", "cypress/**/*.tsx", "cypress/**/*.cy.tsx"],
   "exclude": ["cypress/examples", "node_modules", "lib"]

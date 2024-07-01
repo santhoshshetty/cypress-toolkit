@@ -28,7 +28,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
-      "cypress/e2e/cucumber/tests/**/*.ts"
+      "cypress/e2e/cucumber/**/stepdefs/**/*.ts"
     ],
     "json": {
       "enabled": true,

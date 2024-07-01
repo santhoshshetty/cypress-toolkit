@@ -18,6 +18,7 @@ async function setupNodeEvents(
 export default defineConfig({
   e2e: {
     watchForFileChanges: false,
+    supportFile: false,
     specPattern: "**/*.feature",
     env: {
       url: "https://bstackdemo.com",
