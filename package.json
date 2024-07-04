@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Cypress with Cucumber and TypeScript",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run",
@@ -17,27 +16,29 @@
   "author": "Santhosh Shetty",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@bahmutov/cypress-esbuild-preprocessor": "latest",
-    "@shelex/cypress-allure-plugin": "^2.40.2",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@commitlint/config-conventional": "^19.2.2",
     "cypress": "latest",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.0",
-    "typescript": "latest"
+    "husky": "^9.0.11",
+    "typescript": "latest",
+    "typescript-eslint": "^7.13.1"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
       "cypress/e2e/cucumber/**/stepdefs/**/*.ts"
     ],
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
+    "json": {
+      "enabled": true,
+      "output": "e2e-test-report/cucumber-report.json"
     }
   }
 }

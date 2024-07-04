@@ -1,8 +1,8 @@
-import { generate } from "multiple-cucumber-html-reporter";
+const report = require("multiple-cucumber-html-reporter");
 
-generate({
-  jsonDir: "cypress/cucumber-json",
-  reportPath: "./e2e-test-report/",
+report.generate({
+  jsonDir: "e2e-test-report",
+  reportPath: "e2e-test-report",
   metadata: {
     browser: {
       name: "chrome",

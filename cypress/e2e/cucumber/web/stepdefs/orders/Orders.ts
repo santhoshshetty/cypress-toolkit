@@ -13,7 +13,7 @@ const signInPage = new SignInPage();
  */
 const homePage = new HomePage();
 /**
- * Represents the checkout page object.
+ * Represents the checkout page object
  */
 const checkoutPage = new CheckoutPage();
 

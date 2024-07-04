@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2016",
+    "module": "commonjs",
     "lib": ["es5", "dom"],
-    "types": ["node", "cypress", "@shelex/cypress-allure-plugin"],
-    "module": "NodeNext",
+    "types": ["node", "cypress"],
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "outDir": "lib/cjs/",
+    "strict": true,
     "resolveJsonModule": true
   },
   "include": ["cypress/**/*.ts", "cypress/**/*.tsx", "cypress/**/*.cy.tsx"],
